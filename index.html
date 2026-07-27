@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pythagoras 365</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="theme-color" content="#4CAF50">
+</head>
+<body>
+
+<div id="calendarScreen">
+
+    <h1>Pythagoras 365</h1>
+    <p>One proof every day.</p>
+
+    <button id="darkModeButton">🌙 Dark Mode</button>
+
+    <br><br>
+
+    <button id="randomButton">🎲 Random Proof</button>
+
+    <br><br>
+
+    <input
+        id="searchBox"
+        type="text"
+        placeholder="Search proof..."
+    >
+
+    <br><br>
+
+    <div id="monthControl">
+        <button id="prevMonth">◀</button>
+        <h2 id="monthYear"></h2>
+        <button id="nextMonth">▶</button>
+    </div>
+
+    <div id="calendar"></div>
+
+</div>
+
+<div id="proofScreen" style="display:none;">
+
+    <button id="backButton">← 달력으로</button>
+
+    <h2 id="proofTitle"></h2>
+
+    <p id="proofAuthor"></p>
+    <p id="proofYear"></p>
+    <p id="proofDifficulty"></p>
+
+    <button id="favoriteButton">🤍 즐겨찾기</button>
+
+    <img id="proofImage">
+
+    <p id="proofText"></p>
+
+    <br><br>
+
+    <button id="prevButton">◀ 이전 증명</button>
+    <button id="nextButton">다음 증명 ▶</button>
+
+</div>
+
+<script src="proofs.js"></script>
+<script src="script.js"></script>
+
+<script>
+console.log("테스트");
+
+if ("serviceWorker" in navigator) {
+
+    console.log("지원됨");
+
+    navigator.serviceWorker.register("service-worker.js")
+        .then(() => console.log("등록 완료"))
+        .catch(err => console.error(err));
+
+}
+</script>
+
+</body>
+</html> 
