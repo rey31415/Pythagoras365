@@ -1,9 +1,10 @@
-const CACHE_NAME = "pythagoras365-v1";
+const CACHE_NAME = "pythagoras365-v3";
 
 const urlsToCache = [
     "./",
     "./index.html",
     "./style.css",
+    "./mobile.css",
     "./script.js",
     "./proofs.js",
     "./manifest.json",

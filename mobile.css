@@ -1,60 +1,170 @@
-body{
-    background:red !important;
-}
-body{
-    margin:15px;
+/* ========================= */
+/* Pythagoras 365 Mobile */
+/* ========================= */
+
+html{
+    width:100%;
+    overflow-x:hidden;
 }
 
+body{
+    margin:0;
+    padding:15px;
+    box-sizing:border-box;
+    overflow-x:hidden;
+    font-family:Arial,sans-serif;
+}
+
+/* 전체 화면 */
+
+#calendarScreen,
+#proofScreen{
+    width:100%;
+    max-width:100%;
+    box-sizing:border-box;
+}
+
+/* 제목 */
+
 h1{
-    font-size:38px;
+    font-size:34px;
+    margin:10px 0;
 }
 
 p{
-    font-size:18px;
+    font-size:16px;
 }
+
+/* 버튼 */
 
 button{
     width:100%;
     max-width:none;
-    font-size:18px;
+    height:48px;
+    font-size:17px;
+    border-radius:12px;
+    box-sizing:border-box;
 }
+
+/* 검색창 */
 
 #searchBox{
     width:100%;
     box-sizing:border-box;
+    font-size:17px;
+    padding:12px;
 }
 
+/* 월 이동 */
+
 #monthControl{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
     gap:8px;
 }
 
-#monthControl h2{
-    font-size:24px;
+#monthControl button{
+    width:48px;
+    height:42px;
+    flex-shrink:0;
 }
+
+#monthYear{
+    flex:1;
+    text-align:center;
+    font-size:22px;
+}
+
+/* 달력 */
 
 #calendar{
-    grid-template-columns:repeat(7,1fr);
-    gap:4px;
+
+    display:grid;
+
+    grid-template-columns:repeat(7,minmax(0,1fr));
+
+    gap:3px;
+
     width:100%;
+
+    max-width:100%;
+
+    justify-content:stretch;
+
+    align-items:stretch;
+
+    box-sizing:border-box;
+
 }
+
+#calendar > div{
+
+    min-width:0;
+
+    box-sizing:border-box;
+
+}
+
+/* 날짜 */
 
 .day{
-    padding:12px 0;
-    font-size:15px;
+
+    padding:10px 0;
+
+    font-size:14px;
+
+    border-radius:8px;
+
 }
 
+/* 증명 */
+
 #proofScreen{
-    width:100%;
-    margin:0;
+
     padding:15px;
-    box-sizing:border-box;
+
 }
 
 #proofImage{
+
     width:100%;
+
+    height:auto;
+
+    max-width:100%;
+
+}
+
+#proofTitle{
+
+    font-size:26px;
+
+}
+
+#proofAuthor,
+#proofYear,
+#proofDifficulty{
+
+    font-size:16px;
+
 }
 
 #proofText{
+
     font-size:17px;
+
     line-height:1.8;
+
+}
+
+/* 이전/다음 */
+
+#prevButton,
+#nextButton{
+
+    width:100%;
+
+    margin-top:10px;
+
 }
