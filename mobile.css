@@ -1,0 +1,60 @@
+body{
+    background:red !important;
+}
+body{
+    margin:15px;
+}
+
+h1{
+    font-size:38px;
+}
+
+p{
+    font-size:18px;
+}
+
+button{
+    width:100%;
+    max-width:none;
+    font-size:18px;
+}
+
+#searchBox{
+    width:100%;
+    box-sizing:border-box;
+}
+
+#monthControl{
+    gap:8px;
+}
+
+#monthControl h2{
+    font-size:24px;
+}
+
+#calendar{
+    grid-template-columns:repeat(7,1fr);
+    gap:4px;
+    width:100%;
+}
+
+.day{
+    padding:12px 0;
+    font-size:15px;
+}
+
+#proofScreen{
+    width:100%;
+    margin:0;
+    padding:15px;
+    box-sizing:border-box;
+}
+
+#proofImage{
+    width:100%;
+}
+
+#proofText{
+    font-size:17px;
+    line-height:1.8;
+}
